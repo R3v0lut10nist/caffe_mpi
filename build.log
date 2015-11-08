@@ -1,0 +1,473 @@
+-- The C compiler identification is GNU 4.8.4
+-- The CXX compiler identification is GNU 4.8.4
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found GFlags: /usr/include  
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found Glog: /usr/include  
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found PROTOBUF: /usr/lib/x86_64-linux-gnu/libprotobuf.so  
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+-- Found HDF5: /usr/lib/x86_64-linux-gnu/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/libhdf5.so  
+-- Found LMDB: /usr/include  
+-- Found lmdb    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/liblmdb.so)
+-- Found LevelDB: /usr/include  
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found Snappy: /usr/include  
+-- Found Snappy  (include: /usr/include, library: /usr/lib/libsnappy.so)
+-- CUDA detected: 7.0
+-- Found cuDNN (include: /usr/local/cuda-7.0/include, library: /usr/local/cuda-7.0/lib64/libcudnn.so)
+-- Added CUDA NVCC flags for: sm_52
+-- OpenCV found (/usr/share/OpenCV)
+-- Found Atlas: /usr/include  
+-- Found Atlas (include: /usr/include, library: /usr/lib/libatlas.so)
+-- Found PythonInterp: /usr/bin/python2.7 (found suitable version "2.7.6", minimum required is "2.7") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable version "2.7.6", minimum required is "2.7") 
+-- Found NumPy: /usr/local/lib/python2.7/dist-packages/numpy/core/include (found suitable version "1.10.0", minimum required is "1.7.1") 
+-- NumPy ver. 1.10.0 found (include: /usr/local/lib/python2.7/dist-packages/numpy/core/include)
+-- Could NOT find Boost
+-- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE) 
+-- Found MPI_C: /usr/lib/libmpi.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libhwloc.so  
+-- Found MPI_CXX: /usr/lib/libmpi_cxx.so;/usr/lib/libmpi.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libhwloc.so  
+-- Python interface is disabled or not all required dependecies found. Building without it...
+-- Found Git: /usr/bin/git (found version "1.9.1") 
+-- 
+-- ******************* Caffe Configuration Summary *******************
+-- General:
+--   Version           :   <TODO> (Caffe doesn't declare its version in headers)
+--   Git               :   ac89e5b-dirty
+--   System            :   Linux
+--   C++ compiler      :   /usr/bin/c++
+--   Release CXX flags :   -O3 -DNDEBUG -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Debug CXX flags   :   -g -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Build type        :   Release
+-- 
+--   BUILD_SHARED_LIBS :   ON
+--   BUILD_python      :   ON
+--   BUILD_matlab      :   OFF
+--   BUILD_docs        :   ON
+--   CPU_ONLY          :   OFF
+-- 
+-- Dependencies:
+--   BLAS              :   Yes (Atlas)
+--   Boost             :   Yes (ver. 1.54)
+--   glog              :   Yes
+--   gflags            :   Yes
+--   protobuf          :   Yes (ver. 2.5.0)
+--   lmdb              :   Yes (ver. 0.9.10)
+--   Snappy            :   Yes (ver. 1.1.0)
+--   LevelDB           :   Yes (ver. 1.15)
+--   OpenCV            :   Yes (ver. 2.4.8)
+--   CUDA              :   Yes (ver. 7.0)
+-- 
+-- NVIDIA CUDA:
+--   Target GPU(s)     :   Auto
+--   GPU arch(s)       :   sm_52
+--   cuDNN             :   Yes
+-- 
+-- Documentaion:
+--   Doxygen           :   No
+--   config_file       :   
+-- 
+-- Install:
+--   Install path      :   /home/xyzeng/caffe-mpi_parallel_v3/build/install
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xyzeng/caffe-mpi_parallel_v3/build
+[  1%] Running C++/Python protocol buffer compiler on /home/xyzeng/caffe-mpi_parallel_v3/src/caffe/proto/caffe.proto
+Scanning dependencies of target proto
+[  1%] Building CXX object src/caffe/CMakeFiles/proto.dir/__/__/include/caffe/proto/caffe.pb.cc.o
+Linking CXX static library ../../lib/libproto.a
+[  1%] Built target proto
+[  1%] [  1%] [  1%] [  2%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_pooling_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/util/./cuda_compile_generated_math_functions.cu.o
+[  2%] [  4%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_absval_layer.cu.o
+[  4%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_power_layer.cu.o
+[  5%] [  5%] [  5%] [  7%] [  7%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_prelu_layer.cu.o
+[  8%] [  8%] [ 10%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_base_data_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_bn_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_reduction_layer.cu.o
+[ 11%] [ 13%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_hdf5_output_layer.cu.o
+[ 14%] [ 14%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_contrastive_loss_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_concat_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_relu_layer.cu.o
+[ 14%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_conv_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_bnll_layer.cu.o
+[ 14%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_cudnn_conv_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_sigmoid_layer.cu.o
+[ 15%] [ 17%] [ 17%] [ 18%] [ 18%] [ 18%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_log_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_cudnn_pooling_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_scatter_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_cudnn_relu_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_lrn_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_cudnn_softmax_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_cudnn_tanh_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_slice_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_cudnn_sigmoid_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_deconv_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_silence_layer.cu.o
+[ 20%] [ 20%] [ 21%] [ 21%] [ 23%] [ 23%] [ 24%] [ 26%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_dropout_layer.cu.o
+[ 26%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_softmax_loss_layer.cu.o
+[ 26%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_eltwise_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_softmax_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_euclidean_loss_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_exp_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_tanh_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_filter_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_split_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_gather_layer.cu.o
+[ 27%] [ 27%] [ 28%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_threshold_layer.cu.o
+[ 28%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_hdf5_data_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_im2col_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_mvn_layer.cu.o
+[ 30%] [ 30%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_inner_product_layer.cu.o
+Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/./cuda_compile_generated_sigmoid_cross_entropy_loss_layer.cu.o
+[ 31%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/util/./cuda_compile_generated_im2col.cu.o
+/home/xyzeng/caffe-mpi_parallel_v3/src/caffe/layers/absval_layer.cu: In instantiation of ‘void caffe::AbsValLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+/home/xyzeng/caffe-mpi_parallel_v3/src/caffe/layers/absval_layer.cu:31:451:   required from here
+/home/xyzeng/caffe-mpi_parallel_v3/src/caffe/layers/absval_layer.cu:21:14: warning: unused variable ‘top_data’ [-Wunused-variable]
+   const Dtype* top_data = top[0]->gpu_data();
+              ^
+/home/xyzeng/caffe-mpi_parallel_v3/src/caffe/layers/absval_layer.cu: In instantiation of ‘void caffe::AbsValLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+/home/xyzeng/caffe-mpi_parallel_v3/src/caffe/layers/absval_layer.cu:31:633:   required from here
+/home/xyzeng/caffe-mpi_parallel_v3/src/caffe/layers/absval_layer.cu:21:14: warning: unused variable ‘top_data’ [-Wunused-variable]
+Scanning dependencies of target caffe
+[ 33%] [ 34%] [ 34%] [ 34%] [ 36%] [ 36%] [ 37%] [ 37%] [ 37%] [ 39%] [ 39%] [ 40%] [ 42%] [ 42%] [ 43%] [ 43%] [ 43%] [ 44%] [ 44%] [ 44%] [ 44%] [ 46%] [ 46%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/neuron_layer.cpp.o
+[ 47%] [ 49%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/power_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/accuracy_layer.cpp.o
+[ 50%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/reduction_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/pooling_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/base_data_layer.cpp.o
+[ 50%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/absval_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/base_conv_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/prelu_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/argmax_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/bn_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/bnll_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/concat_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/contrastive_loss_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hinge_loss_det_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/reshape_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_conv_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_pooling_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/relu_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/scatter_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/conv_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_relu_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/im2col_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/loss_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hinge_loss_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_sigmoid_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/lrn_layer.cpp.o
+[ 50%] [ 52%] [ 53%] [ 53%] [ 55%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_softmax_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/sigmoid_layer.cpp.o
+[ 55%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_tanh_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/silence_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/slice_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/data_layer.cpp.o
+[ 56%] [ 56%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/deconv_layer.cpp.o
+[ 57%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/softmax_layer.cpp.o
+[ 57%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/dropout_layer.cpp.o
+[ 59%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/split_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/dummy_data_layer.cpp.o
+[ 59%] [ 60%] [ 60%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/softmax_loss_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/eltwise_layer.cpp.o
+[ 62%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/memory_data_layer.cpp.o
+[ 62%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/euclidean_loss_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/sigmoid_cross_entropy_loss_layer.cpp.o
+[ 63%] [ 63%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/exp_layer.cpp.o
+[ 65%] [ 65%] [ 66%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/spp_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/filter_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/tanh_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/flatten_layer.cpp.o
+[ 66%] [ 68%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/gather_layer.cpp.o
+[ 68%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/threshold_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hdf5_data_layer.cpp.o
+[ 69%] [ 69%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/video_data_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/window_data_layer.cpp.o
+[ 71%] [ 71%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hdf5_output_layer.cpp.o
+[ 72%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/image_data_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/multinomial_logistic_loss_layer.cpp.o
+[ 72%] [ 73%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/infogain_loss_layer.cpp.o
+[ 73%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/mvn_layer.cpp.o
+[ 73%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/inner_product_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/log_layer.cpp.o
+[ 75%] [ 75%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/window_data_multi_context_layer.cpp.o
+[ 76%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/window_data_crop_pad_layer.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/util/benchmark.cpp.o
+[ 76%] [ 78%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/channel.cpp.o
+[ 78%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/cudnn.cpp.o
+[ 79%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/db.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/util/db_leveldb.cpp.o
+[ 79%] [ 81%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/db_lmdb.cpp.o
+[ 81%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/im2col.cpp.o
+[ 82%] [ 82%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/insert_splits.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/util/io.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/util/math_functions.cpp.o
+[ 84%] [ 84%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/mpi_functions.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/util/upgrade_proto.cpp.o
+[ 85%] Building CXX object src/caffe/CMakeFiles/caffe.dir/blob.cpp.o
+[ 85%] [ 86%] Building CXX object src/caffe/CMakeFiles/caffe.dir/common.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/data_transformer.cpp.o
+[ 86%] [ 88%] Building CXX object src/caffe/CMakeFiles/caffe.dir/internal_thread.cpp.o
+[ 88%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layer_factory.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/net.cpp.o
+[ 89%] [ 89%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solver.cpp.o
+Building CXX object src/caffe/CMakeFiles/caffe.dir/syncedmem.cpp.o
+Linking CXX shared library ../../lib/libcaffe.so
+[ 89%] Built target caffe
+Scanning dependencies of target convert_mnist_data
+[ 89%] Building CXX object examples/CMakeFiles/convert_mnist_data.dir/mnist/convert_mnist_data.cpp.o
+Scanning dependencies of target compute_image_mean
+Scanning dependencies of target device_query
+Scanning dependencies of target convert_imageset
+Scanning dependencies of target extract_features
+Scanning dependencies of target test_net
+Scanning dependencies of target net_speed_benchmark
+Scanning dependencies of target upgrade_net_proto_binary
+Scanning dependencies of target upgrade_net_proto_text
+Scanning dependencies of target caffe.bin
+Scanning dependencies of target train_net
+Scanning dependencies of target finetune_net
+Scanning dependencies of target classification
+[ 89%] [ 91%] [ 94%] [ 94%] [ 94%] [ 95%] [ 97%] [ 97%] [ 97%] [ 97%] [ 97%] [ 98%] Building CXX object tools/CMakeFiles/compute_image_mean.dir/compute_image_mean.cpp.o
+Building CXX object tools/CMakeFiles/device_query.dir/device_query.cpp.o
+Building CXX object tools/CMakeFiles/convert_imageset.dir/convert_imageset.cpp.o
+Building CXX object tools/CMakeFiles/upgrade_net_proto_text.dir/upgrade_net_proto_text.cpp.o
+Building CXX object tools/CMakeFiles/net_speed_benchmark.dir/net_speed_benchmark.cpp.o
+Building CXX object tools/CMakeFiles/caffe.bin.dir/caffe.cpp.o
+Building CXX object tools/CMakeFiles/extract_features.dir/extract_features.cpp.o
+Building CXX object tools/CMakeFiles/upgrade_net_proto_binary.dir/upgrade_net_proto_binary.cpp.o
+Building CXX object tools/CMakeFiles/test_net.dir/test_net.cpp.o
+Building CXX object tools/CMakeFiles/train_net.dir/train_net.cpp.o
+Building CXX object examples/CMakeFiles/classification.dir/cpp_classification/classification.cpp.o
+Building CXX object tools/CMakeFiles/finetune_net.dir/finetune_net.cpp.o
+Scanning dependencies of target convert_cifar_data
+Scanning dependencies of target convert_mnist_siamese_data
+[ 98%] [100%] Building CXX object examples/CMakeFiles/convert_cifar_data.dir/cifar10/convert_cifar_data.cpp.o
+Building CXX object examples/CMakeFiles/convert_mnist_siamese_data.dir/siamese/convert_mnist_siamese_data.cpp.o
+Linking CXX executable mnist/convert_mnist_data
+Linking CXX executable device_query
+[100%] Built target device_query
+[100%] Built target convert_mnist_data
+Linking CXX executable cifar10/convert_cifar_data
+Linking CXX executable siamese/convert_mnist_siamese_data
+Linking CXX executable compute_image_mean
+[100%] [100%] Built target convert_cifar_data
+Built target convert_mnist_siamese_data
+[100%] Built target compute_image_mean
+Linking CXX executable convert_imageset
+[100%] Built target convert_imageset
+Linking CXX executable train_net
+Linking CXX executable upgrade_net_proto_binary
+Linking CXX executable net_speed_benchmark
+Linking CXX executable test_net
+Linking CXX executable finetune_net
+Linking CXX executable upgrade_net_proto_text
+[100%] Built target train_net
+[100%] Built target net_speed_benchmark
+[100%] Built target test_net
+[100%] Built target finetune_net
+[100%] Built target upgrade_net_proto_binary
+[100%] Built target upgrade_net_proto_text
+Linking CXX executable extract_features
+[100%] Built target extract_features
+Linking CXX executable caffe
+[100%] Built target caffe.bin
+Linking CXX executable cpp_classification/classification
+[100%] Built target classification
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+-- Found lmdb    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/liblmdb.so)
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found Snappy  (include: /usr/include, library: /usr/lib/libsnappy.so)
+-- CUDA detected: 7.0
+-- Found cuDNN (include: /usr/local/cuda-7.0/include, library: /usr/local/cuda-7.0/lib64/libcudnn.so)
+-- Added CUDA NVCC flags for: sm_52
+-- OpenCV found (/usr/share/OpenCV)
+-- Found Atlas (include: /usr/include, library: /usr/lib/libatlas.so)
+-- NumPy ver. 1.10.0 found (include: /usr/local/lib/python2.7/dist-packages/numpy/core/include)
+-- Could NOT find Boost
+-- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE) 
+-- Python interface is disabled or not all required dependecies found. Building without it...
+-- 
+-- ******************* Caffe Configuration Summary *******************
+-- General:
+--   Version           :   <TODO> (Caffe doesn't declare its version in headers)
+--   Git               :   ac89e5b-dirty
+--   System            :   Linux
+--   C++ compiler      :   /usr/bin/c++
+--   Release CXX flags :   -O3 -DNDEBUG -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Debug CXX flags   :   -g -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Build type        :   Release
+-- 
+--   BUILD_SHARED_LIBS :   ON
+--   BUILD_python      :   ON
+--   BUILD_matlab      :   OFF
+--   BUILD_docs        :   ON
+--   CPU_ONLY          :   OFF
+-- 
+-- Dependencies:
+--   BLAS              :   Yes (Atlas)
+--   Boost             :   Yes (ver. 1.54)
+--   glog              :   Yes
+--   gflags            :   Yes
+--   protobuf          :   Yes (ver. 2.5.0)
+--   lmdb              :   Yes (ver. 0.9.10)
+--   Snappy            :   Yes (ver. 1.1.0)
+--   LevelDB           :   Yes (ver. 1.15)
+--   OpenCV            :   Yes (ver. 2.4.8)
+--   CUDA              :   Yes (ver. 7.0)
+-- 
+-- NVIDIA CUDA:
+--   Target GPU(s)     :   Auto
+--   GPU arch(s)       :   sm_52
+--   cuDNN             :   Yes
+-- 
+-- Documentaion:
+--   Doxygen           :   No
+--   config_file       :   
+-- 
+-- Install:
+--   Install path      :   /home/xyzeng/caffe-mpi_parallel_v3/build/install
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xyzeng/caffe-mpi_parallel_v3/build
+[  1%] Built target proto
+Scanning dependencies of target caffe
+Linking CXX shared library ../../lib/libcaffe.so
+[ 89%] Built target caffe
+Linking CXX executable caffe
+[ 91%] Built target caffe.bin
+Linking CXX executable compute_image_mean
+[ 92%] Built target compute_image_mean
+Linking CXX executable convert_imageset
+[ 94%] Built target convert_imageset
+Linking CXX executable device_query
+[ 94%] Built target device_query
+Linking CXX executable extract_features
+[ 95%] Built target extract_features
+Linking CXX executable finetune_net
+[ 95%] Built target finetune_net
+Linking CXX executable net_speed_benchmark
+[ 95%] Built target net_speed_benchmark
+Linking CXX executable test_net
+[ 95%] Built target test_net
+Linking CXX executable train_net
+[ 97%] Built target train_net
+Linking CXX executable upgrade_net_proto_binary
+[ 97%] Built target upgrade_net_proto_binary
+Linking CXX executable upgrade_net_proto_text
+[ 98%] Built target upgrade_net_proto_text
+Linking CXX executable cpp_classification/classification
+[ 98%] Built target classification
+Linking CXX executable cifar10/convert_cifar_data
+[ 98%] Built target convert_cifar_data
+Linking CXX executable mnist/convert_mnist_data
+[ 98%] Built target convert_mnist_data
+Linking CXX executable siamese/convert_mnist_siamese_data
+[100%] Built target convert_mnist_siamese_data
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/share/Caffe/CaffeConfig.cmake
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/share/Caffe/CaffeTargets.cmake
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/share/Caffe/CaffeTargets-release.cmake
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/test
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/test/test_caffe_main.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/test/test_gradient_check_util.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/benchmark.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/channel.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/cudnn.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/db.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/db_leveldb.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/db_lmdb.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/device_alternate.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/im2col.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/insert_splits.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/io.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/math_functions.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/mkl_alternate.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/mpi_functions.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/rng.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/util/upgrade_proto.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/blob.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/caffe.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/common.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/common_layers.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/data_transformer.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/filler.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/internal_thread.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/layer.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/layer_factory.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/loss_layers.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/net.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/neuron_layers.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/python_layer.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/solver.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/syncedmem.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/vision_layers.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/data_layers.hpp
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/include/caffe/proto/caffe.pb.h
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/lib/libcaffe.so
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib/libcaffe.so" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/lib/libproto.a
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/python/caffe/proto/caffe_pb2.py
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/python/caffe/proto/__init__.py
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/caffe
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/caffe" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/compute_image_mean
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/compute_image_mean" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_imageset
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_imageset" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/device_query
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/device_query" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/extract_features
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/extract_features" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/finetune_net
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/finetune_net" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/net_speed_benchmark
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/net_speed_benchmark" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/test_net
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/test_net" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/train_net
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/train_net" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/upgrade_net_proto_binary
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/upgrade_net_proto_binary" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/upgrade_net_proto_text
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/upgrade_net_proto_text" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_cifar_data
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_cifar_data" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/classification
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/classification" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_mnist_data
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_mnist_data" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"
+-- Installing: /home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_mnist_siamese_data
+-- Set runtime path of "/home/xyzeng/caffe-mpi_parallel_v3/build/install/bin/convert_mnist_siamese_data" to "/home/xyzeng/caffe-mpi_parallel_v3/build/install/lib:/usr/local/cuda-7.0/lib64"

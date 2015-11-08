@@ -63,7 +63,7 @@ void WindowDataCropPadLayer<Dtype>::DataLayerSetUp(const vector<Blob<Dtype>*>& b
 
 	cache_images_ = this->layer_param_.window_data_param().cache_images();
 	string root_folder = this->layer_param_.window_data_param().root_folder();
-
+	int temp_index = 0;
 	const bool prefetch_needs_rand =
 			this->transform_param_.mirror() ||
 			this->transform_param_.crop_size();
@@ -119,7 +119,7 @@ void WindowDataCropPadLayer<Dtype>::DataLayerSetUp(const vector<Blob<Dtype>*>& b
 			infile >> label >> overlap >> x1 >> y1 >> x2 >> y2;
 
 			vector<float> window(WindowDataCropPadLayer::NUM);
-			window[WindowDataCropPadLayer::IMAGE_INDEX] = image_index;
+			window[WindowDataCropPadLayer::IMAGE_INDEX] = temp_index;
 			window[WindowDataCropPadLayer::LABEL] = label;
 			window[WindowDataCropPadLayer::OVERLAP] = overlap;
 			window[WindowDataCropPadLayer::X1] = x1;
@@ -151,6 +151,7 @@ void WindowDataCropPadLayer<Dtype>::DataLayerSetUp(const vector<Blob<Dtype>*>& b
 					<< image_size[2] << " "
 					<< "windows to process: " << num_windows;
 		}
+		temp_index++;
 	} while (infile >> hashtag >> image_index);
 
 	LOG(INFO) << "Number of images: " << image_index+1;
