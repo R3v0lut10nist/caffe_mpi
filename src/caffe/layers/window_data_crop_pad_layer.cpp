@@ -415,7 +415,7 @@ void WindowDataCropPadLayer<Dtype>::InternalThreadEntry() {
 				cv::flip(cv_cropped_img, cv_cropped_img, 1);
 			}
 
-			std::ofstream outfile("out.txt");
+			//std::ofstream outfile("out.txt");
 			// copy the warped window into top_data
 			for (int h = 0; h < cv_cropped_img.rows; ++h) {
 				const uchar* ptr = cv_cropped_img.ptr<uchar>(h);
@@ -437,12 +437,11 @@ void WindowDataCropPadLayer<Dtype>::InternalThreadEntry() {
 								top_data[top_index] = pixel * scale;
 							}
 						}
-						outfile << top_data[top_index] << " ";
+						//outfile << top_data[top_index] << " ";
 					}
 				}
 			}
-			outfile.close();
-			// save results
+			//outfile.close();
 
 			trans_time += timer.MicroSeconds();
 			// get window label
