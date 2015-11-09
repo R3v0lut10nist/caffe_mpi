@@ -1,0 +1,11 @@
+## General
+right_BN_3000_wy/*.txt
+left_BN_3000_wy/*.txt
+up_BN_3000_wy/*.txt
+down_right_BN_3000_wy/*.txt
+
+## BN_1000_allbox_pretrain_7215_8933
+BN_1000_allbox_pretrain_7215_8933/up_BN_1000_allbox_pretrain_7215_8933/*.txt
+BN_1000_allbox_pretrain_7215_8933/down_BN_1000_allbox_pretrain_7215_8933/*.txt
+BN_1000_allbox_pretrain_7215_8933/left_BN_1000_allbox_pretrain_7215_8933/*.txt
+BN_1000_allbox_pretrain_7215_8933/right_BN_1000_allbox_pretrain_7215_8933/*.txt

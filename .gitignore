@@ -1,7 +1,7 @@
 ## General
 matlab/cache
 *.mat
-examples/Googlenet/right_BN_3000_wy/*.txt
+*.out
 # Compiled Object files
 *.slo
 *.lo
