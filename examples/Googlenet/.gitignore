@@ -9,3 +9,10 @@ BN_1000_allbox_pretrain_7215_8933/up_BN_1000_allbox_pretrain_7215_8933/*.txt
 BN_1000_allbox_pretrain_7215_8933/down_BN_1000_allbox_pretrain_7215_8933/*.txt
 BN_1000_allbox_pretrain_7215_8933/left_BN_1000_allbox_pretrain_7215_8933/*.txt
 BN_1000_allbox_pretrain_7215_8933/right_BN_1000_allbox_pretrain_7215_8933/*.txt
+
+
+## official_bbox_ctx_32
+official_bbox_ctx_32/up/*.txt
+official_bbox_ctx_32/down/*.txt
+official_bbox_ctx_32/left/*.txt
+official_bbox_ctx_32/right/*.txt
